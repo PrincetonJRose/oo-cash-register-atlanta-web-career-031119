@@ -13,11 +13,11 @@ class CashRegister
   end
 
   def total=(new_total)
-    @total = new_total
+    self.total = new_total
   end
 
-  def add_item(title, price, *quantity)
-    total += price * quantity
+  def add_item(title, price, quantity = 1)
+    self.total += price * quantity
   end
 
 
