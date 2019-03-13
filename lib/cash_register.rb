@@ -41,7 +41,7 @@ class CashRegister
     end
   end
 
-  def items_returns
+  def items
     ITEMS
   end
 
