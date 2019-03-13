@@ -4,6 +4,10 @@ class CashRegister
     @total = total
   end
 
+  def discount
+    dicount = 20
+  end
+
   
 
 end
