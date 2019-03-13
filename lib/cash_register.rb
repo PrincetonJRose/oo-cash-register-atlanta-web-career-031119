@@ -32,16 +32,20 @@ class CashRegister
   end
 
   def apply_discount()
-    discount_percent = discount / 100.0
-    self.total = self.total - (self.total * discount_percent)
-    "After the discount, the total comes to $#{self.total}."
-    binding.pry
+    if dicount != 0
+      discount_percent = discount / 100.0
+      self.total = self.total - (self.total * discount_percent)
+      "After the discount, the total comes to $#{self.total}."
+    else
+      "There is no discount to apply."
+    end
+
   end
 
   def items_returns
     ITEMS
   end
 
-  
+
 
 end
