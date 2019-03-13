@@ -51,6 +51,6 @@ class CashRegister
     self.total -= PRICES[-1]
   end
 
-  
+
 
 end
