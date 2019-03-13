@@ -38,6 +38,10 @@ class CashRegister
     binding.pry
   end
 
+  def items_returns
+    ITEMS
+  end
 
+  
 
 end
