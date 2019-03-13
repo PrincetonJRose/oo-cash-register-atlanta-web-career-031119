@@ -2,11 +2,11 @@ require 'pry'
 
 class CashRegister
 
-  def initialize(total = 0, discount = 0)
+  def initialize(total = 0, discount = 0, items = [], prices = [])
     @total = total
     @discount = discount
-    ITEMS = []
-    PRICES = []
+    @items = items
+    @prices = prices
   end
 
   def discount
@@ -43,11 +43,11 @@ class CashRegister
   end
 
   def items
-    ITEMS
+    @items
   end
 
   def void_last_transaction
-    self.total -= PRICES[-1]
+    self.total -= @prices[-1]
   end
 
 
