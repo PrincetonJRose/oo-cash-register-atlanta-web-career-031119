@@ -34,8 +34,8 @@ class CashRegister
   end
 
   def apply_discount()
-    if dicount != 0
-      discount_percent = discount / 100.0
+    if self.discount != 0
+      discount_percent = self.discount / 100.0
       self.total = self.total - (self.total * discount_percent)
       "After the discount, the total comes to $#{self.total}."
     else
