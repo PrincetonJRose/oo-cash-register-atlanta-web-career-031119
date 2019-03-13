@@ -44,7 +44,7 @@ class CashRegister
   end
 
   def items
-    return ITEMS
+    ITEMS
   end
 
   def void_last_transaction
