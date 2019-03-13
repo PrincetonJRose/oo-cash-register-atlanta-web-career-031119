@@ -8,6 +8,7 @@ class CashRegister
   end
 
   ITEMS = []
+  PRICES = []
 
   def discount
     @discount
