@@ -1,13 +1,18 @@
 class CashRegister
 
-  def initialize(total = 0)
+  def initialize(total = 0, discount = 0)
     @total = total
+    @discount = discount
   end
 
   def discount
-    dicount = 20
+    @discount
   end
 
+  def discount=(new_discount)
+    @discount = new_discount
+  end
+  
   def total
     @total
   end
@@ -21,10 +26,10 @@ class CashRegister
     self.total += price * quantity
   end
 
-  def apply_discount(total, discount)
+  def apply_discount()
     discount_percent = discount / 100.0
     total = total - (total * discount_percent)
-    
+
   end
 
 
