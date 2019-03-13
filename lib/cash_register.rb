@@ -2,7 +2,7 @@ require 'pry'
 
 class CashRegister
 
-  def initialize(total = 0, discount = 20, items = [], prices = [])
+  def initialize(discount = 0, total = 0, items = [], prices = [])
     @total = total
     @discount = discount
     @items = items
@@ -37,7 +37,7 @@ class CashRegister
       "There is no discount to apply."
     else
       discount_percent = self.discount / 100.0
-      self.total = ((self.total - ((self.total - self.discount) * discount_percent)) - self.discount).to_i
+      self.total = self.total - (self.total * discount_percent)
       "After the discount, the total comes to $#{self.total}."
     end
   end
