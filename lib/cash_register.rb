@@ -8,6 +8,10 @@ class CashRegister
     dicount = 20
   end
 
+  def total
+    @total
+  end
+
   
 
 end
