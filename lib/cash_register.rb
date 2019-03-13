@@ -34,7 +34,7 @@ class CashRegister
   end
 
   def apply_discount()
-    if @discount != 20
+    if discount == 0
       "There is no discount to apply."
     else
       discount_percent = self.discount / 100.0
